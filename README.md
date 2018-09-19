@@ -17,6 +17,9 @@ import { foregroundColor } from '@emmangarcia/chameleon';
 var hsl = foregroundColor(128,128,128);
 ```
 
+## Demo
+[Colorify](https://jmdg.io/colorify/)
+
 ## Author
 [Emmanuel Victor Garcia](https://yuelvic.github.io/)
 
