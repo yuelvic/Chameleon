@@ -1,27 +1,3 @@
-# Chameleon
-### The better way to compute foreground color with the given background color.
-
-## Features
-- [x] RGB to HSL
-- [ ] HEX to HSL 
-
-## Installation
-```shell
-npm -i @emmangarcia/chameleon --save
-```
-
-## Usage
-```js
-import { foregroundColor } from '@emmangarcia/chameleon';
-
-var hsl = foregroundColor(128,128,128);
-```
-
-## Author
-[Emmanuel Victor Garcia](https://yuelvic.github.io/)
-
-## License
-```
 MIT License
 
 Copyright (c) 2018 Emmanuel Victor Garcia
@@ -43,5 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-© 2018 GitHub, Inc.
-```

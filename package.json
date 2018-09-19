@@ -1,7 +1,7 @@
 {
-  "name": "chameleon",
+  "name": "@emmangarcia/chameleon",
   "version": "0.1.0",
-  "description": "",
+  "description": "The better way to compute foreground color with the given background color.",
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
