@@ -1,6 +1,6 @@
 {
   "name": "@emmangarcia/chameleon",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "The better way to compute foreground color with the given background color.",
   "main": "index.js",
   "scripts": {
