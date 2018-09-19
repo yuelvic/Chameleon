@@ -7,7 +7,7 @@
 
 ## Installation
 ```shell
-npm -i @emmangarcia/chameleon --save
+npm install @emmangarcia/chameleon
 ```
 
 ## Usage
