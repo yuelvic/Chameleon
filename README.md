@@ -3,7 +3,7 @@
 
 ## Features
 - [x] RGB to HSL
-- [ ] HEX to HSL 
+- [x] HEX to HSL 
 
 ## Installation
 ```shell
@@ -14,7 +14,8 @@ npm install @emmangarcia/chameleon
 ```js
 import { foregroundColor } from '@emmangarcia/chameleon';
 
-var hsl = foregroundColor(128,128,128);
+var rgbToHsl = foregroundRgbColor(256,256,256); // rgb to hsl
+var hexToHsl = foregroundHexColor("#FFFFFF"); // hex to hsl
 ```
 
 ## Demo

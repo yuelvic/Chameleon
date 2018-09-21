@@ -6,16 +6,19 @@
 - [ ] HEX to HSL 
 
 ## Installation
-```js
-npm -i chameleon --save
+```shell
+npm install @emmangarcia/chameleon
 ```
 
 ## Usage
 ```js
-import { foregroundColor } from 'chameleon';
+import { foregroundColor } from '@emmangarcia/chameleon';
 
 var hsl = foregroundColor(128,128,128);
 ```
+
+## Demo
+[Colorify](https://jmdg.io/colorify/)
 
 ## Author
 [Emmanuel Victor Garcia](https://yuelvic.github.io/)

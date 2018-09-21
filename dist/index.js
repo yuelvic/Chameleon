@@ -3,12 +3,9 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var foregroundColor = exports.foregroundColor = function foregroundColor(r, g, b) {
+var foregroundRgbColor = exports.foregroundRgbColor = function foregroundRgbColor(r, g, b) {
   var hsl = rgbToHsl(r, g, b);
-  hsl[0] = (hsl[0] + 0.5) % 1;
-  hsl[1] = (hsl[1] + 0.5) % 1;
-  hsl[2] = (hsl[2] + 0.5) % 1;
-  return 'hsl(' + hsl[0] * 360 + ',' + hsl[1] * 100 + '%,' + hsl[2] * 100 + '%)';
+  return convert(hsl);
 };
 
 var rgbToHsl = function rgbToHsl(r, g, b) {
@@ -36,4 +33,36 @@ var rgbToHsl = function rgbToHsl(r, g, b) {
     h /= 6;
   }
   return [h, s, l];
+};
+
+var foregroundHexColor = exports.foregroundHexColor = function foregroundHexColor(hex) {
+  var rgb = hexToHsl(hex);
+  var hsl = rgbToHsl(rgb[0], rgb[1], rgb[2]);
+  return convert(hsl);
+};
+
+var hexToHsl = function hexToHsl(hex) {
+  var rgb = hexToRgb(hex);
+  return [rgb.r, rgb.g, rgb.b];
+};
+
+var hexToRgb = function hexToRgb(hex) {
+  var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+  hex = hex.replace(shorthandRegex, function (m, r, g, b) {
+    return r + r + g + g + b + b;
+  });
+
+  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return result ? {
+    r: parseInt(result[1], 16),
+    g: parseInt(result[2], 16),
+    b: parseInt(result[3], 16)
+  } : null;
+};
+
+var convert = function convert(hsl) {
+  hsl[0] = (hsl[0] + 0.5) % 1;
+  hsl[1] = (hsl[1] + 0.5) % 1;
+  hsl[2] = (hsl[2] + 0.5) % 1;
+  return 'hsl(' + hsl[0] * 360 + ',' + hsl[1] * 100 + '%,' + hsl[2] * 100 + '%)';
 };

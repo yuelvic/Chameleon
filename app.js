@@ -1,3 +1,4 @@
-import { foregroundColor } from './index'
+import { foregroundRgbColor, foregroundHexColor } from './index'
 
-console.log(foregroundColor(255,255,255))
+console.log(foregroundRgbColor(255,255,255));
+console.log(foregroundHexColor("#2222fc"));
