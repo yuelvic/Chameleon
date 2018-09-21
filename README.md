@@ -1,5 +1,5 @@
 # Chameleon
-### The better way to compute foreground color with the given background color.
+### A better way to compute foreground color with the given background color.
 
 ## Features
 - [x] RGB to HSL
